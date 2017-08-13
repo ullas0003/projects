@@ -11,10 +11,14 @@ public class Test {
 
     public void getAttributes(){
         Field[] Attributes = this.getClass().getDeclaredFields();   
-        for(int i=0;i<Attributes.length;i++){
+        /*for(int i=0;i<Attributes.length;i++){
             System.out.println("Declared Fields"+Attributes[i]);    
         }
-
+*/		
+        for (Field field : Attributes) {
+			System.out.println("field => " +field);
+		}
+        
     }
     public static void main(String args[]){
 
