@@ -14,13 +14,13 @@ public class FileTest {
 
 		File f = new File("abc.txt");
 		//		File f = new File("/Users/ullas/Desktop/");
-		System.out.println(f.exists());
+//		System.out.println(f.exists());
 		f.createNewFile();
-		System.out.println(f.getAbsolutePath());
+//		System.out.println(f.getAbsolutePath());
 		// String name = (f.canRead()==true)?"asd":"asd";//ternary
-		System.out.println(f.exists());
+//		System.out.println(f.exists());
 		//f.mkdir();
-		System.out.println(f.length());
+		//System.out.println(f.length());
 //		String[] files = f.list();
 //		for (String file : files) {
 //			System.out.println(file);
@@ -68,12 +68,14 @@ public class FileTest {
 //		
 //		br.close();
 		
-		PrintWriter pw = new PrintWriter("pw.txt");
+		/*PrintWriter pw = new PrintWriter("pw.txt");
 		pw.write("dasdasd");
 		pw.println("aok ddasd");
 		pw.flush();
-		pw.close();
+		pw.close();*/
 		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println(br.readLine());
 		
 	}
 
